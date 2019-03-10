@@ -10,6 +10,7 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
        sudo systemd \
        build-essential libffi-dev libssl-dev \
+       unzip \
        python-pip python-dev python-setuptools python-wheel \
     && rm -rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
